@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TableViewCell" customModule="GCD" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="138"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZXq-48-adG">
+                    <rect key="frame" x="0.0" y="0.0" width="80" height="138"/>
+                    <color key="backgroundColor" red="0.82814143409999996" green="1" blue="0.63753862770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="RbG-3I-R2U"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="w6L-Jc-GKV">
+                    <rect key="frame" x="295" y="0.0" width="80" height="138"/>
+                    <color key="backgroundColor" red="1" green="0.01969787772" blue="0.01446648117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="r1Y-pA-jNd"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ZXq-48-adG" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="A92-Fk-lsZ"/>
+                <constraint firstItem="ZXq-48-adG" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="LA4-YK-zHn"/>
+                <constraint firstItem="w6L-Jc-GKV" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="Sbs-oS-PZu"/>
+                <constraint firstItem="w6L-Jc-GKV" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="eFe-4Z-JWD"/>
+                <constraint firstItem="w6L-Jc-GKV" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="lSh-pK-k1D"/>
+                <constraint firstItem="ZXq-48-adG" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="o5l-Tf-Tnn"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="imageLeft" destination="ZXq-48-adG" id="9J1-7g-CuC"/>
+                <outlet property="imageRight" destination="w6L-Jc-GKV" id="mDm-SM-aEZ"/>
+            </connections>
+            <point key="canvasLocation" x="132" y="-83.658170914542737"/>
+        </view>
+    </objects>
+</document>

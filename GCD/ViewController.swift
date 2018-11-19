@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
-    fileprivate let imagesArray = ["https://pp.vk.me/c837633/v837633627/12d10/WzE_c9um7Ek.jpg",
+    fileprivate let arrayImagesURL = ["http://agoge.su/wp-content/uploads/2017/09/shutup.jpg",
                                    "http://img.1001mem.ru/posts_temp/16-08-24/3856256.jpg",
                                    "https://pm1.narvii.com/6389/65066466857083f0445af8c19972bde6bbef86fe_hq.jpg",
                                    "https://cs5.pikabu.ru/images/big_size_comm/2015-11_5/1448407751129180442.jpg",
@@ -20,7 +20,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                                    "https://cs9.pikabu.ru/post_img/2017/04/03/7/1491215311199111895.png",
                                    "https://bryansktoday.ru/media/k2/items/cache/c803f34f838a7cde7be0d34d45574749_XL.jpg",
                                    "https://i.ytimg.com/vi/lYyuXKuc8jM/maxresdefault.jpg"]
-    fileprivate var arrayImage = [(first: UIImage, second: UIImage)]()
+    fileprivate var arrayImages = [(first: UIImage, second: UIImage)]()
 
     @IBOutlet fileprivate weak var tableView: UITableView!
 
@@ -32,17 +32,46 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return imagesArray.count/2
+        return arrayImages.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! TableViewCell
-        cell.setDataInImage(imageLeft: arrayImage[indexPath.row].first, imageRight: arrayImage[indexPath.row].second)
+        cell.setDataInImage(imageLeft: arrayImages[indexPath.row].first, imageRight: arrayImages[indexPath.row].second)
         return cell
     }
 
-    fileprivate func loadImages() {
-        
+    @IBAction func concurrentAction(_ sender: Any) {
+        arrayImages.removeAll()
+        tableView.reloadData()
+        let queue = DispatchQueue.init(label: "Cuncurrent", attributes: .concurrent)
+        for i in stride(from: 0, to: arrayImagesURL.count, by: 2) {
+            asyncLoadImages(firstImageURL: URL(string: arrayImagesURL[i])!, secondImageURL: URL(string: arrayImagesURL[i+1])!, runQueue: queue)
+        }
+    }
+
+    @IBAction func serialAction(_ sender: Any) {
+        arrayImages.removeAll()
+        tableView.reloadData()
+        let queue = DispatchQueue.init(label: "Serial")
+        for i in stride(from: 0, to: arrayImagesURL.count, by: 2) {
+            asyncLoadImages(firstImageURL: URL(string: arrayImagesURL[i])!, secondImageURL: URL(string: arrayImagesURL[i+1])!, runQueue: queue)
+        }
+    }
+
+    fileprivate func asyncLoadImages(firstImageURL: URL, secondImageURL: URL, runQueue: DispatchQueue) {
+        runQueue.async {
+            do {
+                let dataFirstImage = try Data(contentsOf: firstImageURL)
+                let dataSecondImage = try Data(contentsOf: secondImageURL)
+                DispatchQueue.main.async {
+                    self.arrayImages.append((first: UIImage(data: dataFirstImage)!, second: UIImage(data: dataSecondImage)!))
+                    self.tableView.reloadData()
+                }
+            } catch {
+                print("error loading image \(error)")
+            }
+        }
     }
 
 }

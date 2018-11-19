@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="120" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="t2U-c2-X6k">
-                                <rect key="frame" x="0.0" y="70" width="375" height="597"/>
+                                <rect key="frame" x="0.0" y="52" width="375" height="615"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="s0E-Ps-la5">
@@ -61,7 +61,7 @@
                             <constraint firstItem="t2U-c2-X6k" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="8MU-F3-EBs"/>
                             <constraint firstItem="GQX-dO-LbC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="AG2-le-d3X"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GQX-dO-LbC" secondAttribute="trailing" constant="20" id="Adz-3Q-2uy"/>
-                            <constraint firstItem="t2U-c2-X6k" firstAttribute="top" secondItem="lp7-7i-CJ4" secondAttribute="bottom" constant="20" id="J1v-c7-x4g"/>
+                            <constraint firstItem="t2U-c2-X6k" firstAttribute="top" secondItem="lp7-7i-CJ4" secondAttribute="bottom" constant="2" id="J1v-c7-x4g"/>
                             <constraint firstItem="t2U-c2-X6k" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="WhL-xt-sGF"/>
                             <constraint firstItem="t2U-c2-X6k" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="n4j-Kn-cp5"/>
                             <constraint firstItem="lp7-7i-CJ4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="sxR-vU-5y4"/>

@@ -44,7 +44,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     @IBAction func concurrentAction(_ sender: Any) {
         arrayImages.removeAll()
         tableView.reloadData()
-        let queue = DispatchQueue.init(label: "Cuncurrent", attributes: .concurrent)
+        let queue = DispatchQueue.init(label: "Cuncurrent", qos: .background, attributes: .concurrent)
         for i in stride(from: 0, to: arrayImagesURL.count, by: 2) {
             asyncLoadImages(firstImageURL: URL(string: arrayImagesURL[i])!, secondImageURL: URL(string: arrayImagesURL[i+1])!, runQueue: queue)
         }
@@ -53,7 +53,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     @IBAction func serialAction(_ sender: Any) {
         arrayImages.removeAll()
         tableView.reloadData()
-        let queue = DispatchQueue.init(label: "Serial")
+
+        let queue = DispatchQueue.init(label: "Serial", qos: .userInitiated)
         for i in stride(from: 0, to: arrayImagesURL.count, by: 2) {
             asyncLoadImages(firstImageURL: URL(string: arrayImagesURL[i])!, secondImageURL: URL(string: arrayImagesURL[i+1])!, runQueue: queue)
         }

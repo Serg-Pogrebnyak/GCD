@@ -8,13 +8,19 @@
 
 import UIKit
 
+protocol SafeArrayDelegate{
+    func reloadTable()
+}
+
 class SafeArray<T> {
+    var delegate: SafeArrayDelegate?
     private var array = [T]()
     private let queue = DispatchQueue(label: "Array queue", attributes: .concurrent)
 
     public func append(_ value: T) {
         queue.async(flags: .barrier) {
             self.array.append(value)
+            //self.delegate?.reloadTable()
         }
     }
 
@@ -24,5 +30,11 @@ class SafeArray<T> {
             result = self.array
         }
         return result
+    }
+
+    public func removeAll() {
+        queue.sync {
+            self.array.removeAll()
+        }
     }
 }

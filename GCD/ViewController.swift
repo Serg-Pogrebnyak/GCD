@@ -48,7 +48,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         arrayImages.removeAll()
         tableView.reloadData()
         let QosCurrent = Qos.qosArray[picker.selectedRow(inComponent: 0)].qos
-        let queue = DispatchQueue.init(label: "Cuncurrent", qos: QosCurrent, attributes: .concurrent)
+        let queue = DispatchQueue.init(label: "Concurrent", qos: QosCurrent, attributes: .concurrent)
         for i in stride(from: 0, to: arrayImagesURL.count, by: 2) {
             asyncLoadImages(firstImageURL: URL(string: arrayImagesURL[i])!, secondImageURL: URL(string: arrayImagesURL[i+1])!, runQueue: queue)
         }

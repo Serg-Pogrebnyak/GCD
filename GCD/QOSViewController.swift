@@ -9,7 +9,7 @@
 import UIKit
 import Alamofire
 
-class ThirdViewController: UIViewController {
+class QOSViewController: UIViewController {
 
     @IBOutlet fileprivate weak var label1Qos: UILabel!
     @IBOutlet fileprivate weak var label1Percent: UILabel!
@@ -33,7 +33,6 @@ class ThirdViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         cleare()
-        self.navigationController?.navigationBar.isHidden = true
     }
     
     @IBAction func start(_ sender: Any) {
@@ -79,6 +78,10 @@ class ThirdViewController: UIViewController {
         image2.image = nil
         image3.image = nil
         image4.image = nil
+        label1Percent.text = "Empty"
+        label2Percent.text = "Empty"
+        label3Percent.text = "Empty"
+        label4Percent.text = "Empty"
     }
 
 }

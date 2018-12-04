@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		0307CA2BC543D699455988C9 /* Pods_GCD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 432C1E8837E6015D8C12077F /* Pods_GCD.framework */; };
+		DE124E5621AC53AA0031890B /* GroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE124E5521AC53AA0031890B /* GroupViewController.swift */; };
 		DE1960E421A43BA2005A8406 /* Qos.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1960E321A43BA2005A8406 /* Qos.swift */; };
 		DE1960E621A43F21005A8406 /* SafeArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1960E521A43F21005A8406 /* SafeArray.swift */; };
 		DE1960E821A440D9005A8406 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1960E721A440D9005A8406 /* SecondViewController.swift */; };
-		DE5E470921A6A2890012F2A2 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5E470821A6A2890012F2A2 /* ThirdViewController.swift */; };
+		DE5E470921A6A2890012F2A2 /* QOSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5E470821A6A2890012F2A2 /* QOSViewController.swift */; };
 		DE61B7CE219F184B00B188F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE61B7CD219F184B00B188F2 /* AppDelegate.swift */; };
-		DE61B7D0219F184B00B188F2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE61B7CF219F184B00B188F2 /* ViewController.swift */; };
+		DE61B7D0219F184B00B188F2 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE61B7CF219F184B00B188F2 /* FirstViewController.swift */; };
 		DE61B7D3219F184B00B188F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE61B7D1219F184B00B188F2 /* Main.storyboard */; };
 		DE61B7D5219F184C00B188F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE61B7D4219F184C00B188F2 /* Assets.xcassets */; };
 		DE61B7D8219F184C00B188F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE61B7D6219F184C00B188F2 /* LaunchScreen.storyboard */; };
@@ -25,13 +26,14 @@
 		08FED51EA5C96BF9EB18E12A /* Pods-GCD.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GCD.release.xcconfig"; path = "Target Support Files/Pods-GCD/Pods-GCD.release.xcconfig"; sourceTree = "<group>"; };
 		154599F9F32B861225089AE4 /* Pods-GCD.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GCD.debug.xcconfig"; path = "Target Support Files/Pods-GCD/Pods-GCD.debug.xcconfig"; sourceTree = "<group>"; };
 		432C1E8837E6015D8C12077F /* Pods_GCD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GCD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE124E5521AC53AA0031890B /* GroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupViewController.swift; sourceTree = "<group>"; };
 		DE1960E321A43BA2005A8406 /* Qos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Qos.swift; sourceTree = "<group>"; };
 		DE1960E521A43F21005A8406 /* SafeArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeArray.swift; sourceTree = "<group>"; };
 		DE1960E721A440D9005A8406 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
-		DE5E470821A6A2890012F2A2 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		DE5E470821A6A2890012F2A2 /* QOSViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QOSViewController.swift; sourceTree = "<group>"; };
 		DE61B7CA219F184B00B188F2 /* GCD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GCD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE61B7CD219F184B00B188F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DE61B7CF219F184B00B188F2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DE61B7CF219F184B00B188F2 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		DE61B7D2219F184B00B188F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DE61B7D4219F184C00B188F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE61B7D7219F184C00B188F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -93,14 +95,15 @@
 				DE1960E321A43BA2005A8406 /* Qos.swift */,
 				DE61B7DF219F214100B188F2 /* Nibs */,
 				DE61B7CD219F184B00B188F2 /* AppDelegate.swift */,
-				DE61B7CF219F184B00B188F2 /* ViewController.swift */,
+				DE61B7CF219F184B00B188F2 /* FirstViewController.swift */,
 				DE1960E721A440D9005A8406 /* SecondViewController.swift */,
 				DE61B7D1219F184B00B188F2 /* Main.storyboard */,
 				DE61B7D4219F184C00B188F2 /* Assets.xcassets */,
 				DE61B7D6219F184C00B188F2 /* LaunchScreen.storyboard */,
 				DE61B7D9219F184C00B188F2 /* Info.plist */,
 				DE1960E521A43F21005A8406 /* SafeArray.swift */,
-				DE5E470821A6A2890012F2A2 /* ThirdViewController.swift */,
+				DE5E470821A6A2890012F2A2 /* QOSViewController.swift */,
+				DE124E5521AC53AA0031890B /* GroupViewController.swift */,
 			);
 			path = GCD;
 			sourceTree = "<group>";
@@ -235,11 +238,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE124E5621AC53AA0031890B /* GroupViewController.swift in Sources */,
 				DE1960E821A440D9005A8406 /* SecondViewController.swift in Sources */,
 				DE1960E621A43F21005A8406 /* SafeArray.swift in Sources */,
 				DE61B7E3219F224100B188F2 /* TableViewCell.swift in Sources */,
-				DE5E470921A6A2890012F2A2 /* ThirdViewController.swift in Sources */,
-				DE61B7D0219F184B00B188F2 /* ViewController.swift in Sources */,
+				DE5E470921A6A2890012F2A2 /* QOSViewController.swift in Sources */,
+				DE61B7D0219F184B00B188F2 /* FirstViewController.swift in Sources */,
 				DE61B7CE219F184B00B188F2 /* AppDelegate.swift in Sources */,
 				DE1960E421A43BA2005A8406 /* Qos.swift in Sources */,
 			);

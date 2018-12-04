@@ -12,6 +12,7 @@
 		DE1960E421A43BA2005A8406 /* Qos.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1960E321A43BA2005A8406 /* Qos.swift */; };
 		DE1960E621A43F21005A8406 /* SafeArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1960E521A43F21005A8406 /* SafeArray.swift */; };
 		DE1960E821A440D9005A8406 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1960E721A440D9005A8406 /* SecondViewController.swift */; };
+		DE58124121B6D1B8000BD516 /* BarrierViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE58124021B6D1B8000BD516 /* BarrierViewController.swift */; };
 		DE5E470921A6A2890012F2A2 /* QOSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5E470821A6A2890012F2A2 /* QOSViewController.swift */; };
 		DE61B7CE219F184B00B188F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE61B7CD219F184B00B188F2 /* AppDelegate.swift */; };
 		DE61B7D0219F184B00B188F2 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE61B7CF219F184B00B188F2 /* FirstViewController.swift */; };
@@ -30,6 +31,7 @@
 		DE1960E321A43BA2005A8406 /* Qos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Qos.swift; sourceTree = "<group>"; };
 		DE1960E521A43F21005A8406 /* SafeArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeArray.swift; sourceTree = "<group>"; };
 		DE1960E721A440D9005A8406 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		DE58124021B6D1B8000BD516 /* BarrierViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarrierViewController.swift; sourceTree = "<group>"; };
 		DE5E470821A6A2890012F2A2 /* QOSViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QOSViewController.swift; sourceTree = "<group>"; };
 		DE61B7CA219F184B00B188F2 /* GCD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GCD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE61B7CD219F184B00B188F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 				DE1960E521A43F21005A8406 /* SafeArray.swift */,
 				DE5E470821A6A2890012F2A2 /* QOSViewController.swift */,
 				DE124E5521AC53AA0031890B /* GroupViewController.swift */,
+				DE58124021B6D1B8000BD516 /* BarrierViewController.swift */,
 			);
 			path = GCD;
 			sourceTree = "<group>";
@@ -242,6 +245,7 @@
 				DE1960E821A440D9005A8406 /* SecondViewController.swift in Sources */,
 				DE1960E621A43F21005A8406 /* SafeArray.swift in Sources */,
 				DE61B7E3219F224100B188F2 /* TableViewCell.swift in Sources */,
+				DE58124121B6D1B8000BD516 /* BarrierViewController.swift in Sources */,
 				DE5E470921A6A2890012F2A2 /* QOSViewController.swift in Sources */,
 				DE61B7D0219F184B00B188F2 /* FirstViewController.swift in Sources */,
 				DE61B7CE219F184B00B188F2 /* AppDelegate.swift in Sources */,

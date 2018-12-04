@@ -30,7 +30,8 @@ class BarrierViewController: UIViewController {
 
     @IBOutlet fileprivate weak var barierImageView: UIImageView!
     
-    fileprivate let imageURL = URL(string: "http://www.effigis.com/wp-content/uploads/2015/02/Iunctus_SPOT5_5m_8bit_RGB_DRA_torngat_mountains_national_park_8bits_1.jpg")!
+    //fileprivate let imageURL = URL(string: "http://www.effigis.com/wp-content/uploads/2015/02/Iunctus_SPOT5_5m_8bit_RGB_DRA_torngat_mountains_national_park_8bits_1.jpg")!//50mb
+    fileprivate let imageURL = URL(string: "http://www.effigis.com/wp-content/uploads/2015/02/DigitalGlobe_WorldView1_50cm_8bit_BW_DRA_Bangkok_Thailand_2009JAN06_8bits_sub_r_1.jpg")!//15mb
     fileprivate let imageBarierURL = URL(string: "http://www.effigis.com/wp-content/uploads/2015/02/Airbus_Pleiades_50cm_8bit_RGB_Yogyakarta.jpg")!
 
     override func viewDidLoad() {
